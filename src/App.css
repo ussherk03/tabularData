@@ -1,0 +1,365 @@
+body {
+    width: 100%;
+    background: #d1cccc;
+    margin: 0 auto;
+    /* overflow-x: hidden; */
+}
+
+
+/*** INCOMES PAGE ***/
+
+#income-header {
+    background-color: rgb(240, 236, 237);
+    padding: 1.3rem;
+    transform: scale(0.9);
+    margin: 2rem auto;
+    border-radius: 6px;
+}
+
+.hero-txt {
+    font-family: 'Lato', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.9rem;
+    padding: 1px;
+    margin-left: .5rem;
+    color: rgb(94, 92, 92);
+}
+
+#income-header .fa-coins {
+    color: orange;
+    font-size: 1.9rem;
+}
+
+#add-inc-bttn {
+    text-decoration: none;
+    color: #fff;
+    background: blue;
+    padding: 13px 19px;
+    border: 2px blue solid;
+    font-family: 'Lato', serif;
+    font-size: 21px;
+    font-weight: 600;
+    border-radius: 9px;
+    transition: 0.2s ease-in;
+
+    position: absolute;
+    top: 2em;
+    right: 7rem;
+}
+
+#add-inc-bttn:hover {
+    color: blue;
+    border: 2px blue solid;
+    background: white;
+}
+
+
+
+/** TABLE **/
+table {
+    width: 90rem;
+    background: gray;
+    margin: 0 auto;
+    transform: scale(0.95);
+}
+
+.header-row {
+    background: rgb(70, 70, 212);
+}
+
+.header-row th {
+    padding: 1rem 1rem;
+    color: white;
+    font-family: 'Lato', serif;
+    text-align: center;
+    font-size: 21px;
+}
+
+.header-row .note {
+    width: 15rem;
+}
+
+.header-row .title,
+.header-row .amnt,
+.header-row .category {
+    width: 10rem;
+}
+
+.header-row .invc-num {
+    width: 9rem;
+}
+
+.header-row .action {
+    width: 6rem;
+}
+
+#edit-bttn {
+    color: teal;
+    font-size: 2rem;
+}
+
+#del-bttn {
+    color: crimson;
+    font-size: 2rem;
+}
+
+.tr {
+    margin-bottom: 3px;
+    font-family: 'Lato', serif;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    font-size: 21px;
+}
+
+td:nth-child(even) {
+    background: white;
+    padding: 2rem 1rem;
+}
+
+td:nth-child(odd) {
+    background: rgb(211, 207, 207);
+}
+
+.action a:first-child {
+    margin-left: 9px;
+}
+
+.action a:last-child {
+    margin-left: 2rem;
+}
+
+.fa-pen-nib {
+    color: rgb(97, 93, 93);
+    font-size: 25px;
+}
+
+.fa-trash {
+    font-size: 25px;
+}
+
+
+/*** EDIT PAGE **/
+.edit-box {
+    margin: 2rem auto;
+    width: 90%;
+}
+
+#edit-header {
+    width: 100%;
+    margin: 2rem auto;
+    background-color: rgb(224, 221, 222);
+    padding: 1.3rem;
+    transform: scale(0.9);
+    margin: 2rem auto;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px #999;
+}
+
+#edit-header .fa-pen {
+    color: black;
+    font-size: 2rem;
+}
+
+.hero-txt {
+    font-family: 'Lato', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 1px;
+    color: rgb(145, 141, 141);
+}
+
+#view-bttn {
+    text-decoration: none;
+    color: #fff;
+    background: blue;
+    padding: 13px 19px;
+    border: 2px blue solid;
+    font-family: 'Lato', serif;
+    font-size: 21px;
+    font-weight: 600;
+    border-radius: 9px;
+    transition: 0.2s ease-in;
+
+    position: absolute;
+    top: 2.1em;
+    right: 10rem;
+}
+
+#view-bttn:hover {
+    color: blue;
+    border: 2px blue solid;
+    background: white;
+}
+
+#prompt {
+    width: 20rem;
+    background: rgb(84, 185, 84);
+    color: white;
+    border-radius: 9px;
+    padding: 1rem 0.2rem;
+    text-align: center;
+
+    position: absolute;
+    top: .2px;
+    right: 40%;  /* right: 6rem */
+    opacity: 0;
+    box-shadow: 2px 11px 9px rgb(131, 131, 131);
+    transition: 0.3s ease-out;
+}
+
+
+.edit-frame {
+    transform: scale(0.95);
+    box-shadow: 2px 2px 1px #999;
+    border-radius: 9px;
+    border: 0.3px gray solid;
+    padding: 2rem;
+    width: 80vw;
+    margin: 0.4rem auto;
+}
+
+label {
+    display: block;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+label>span {
+    color: red;
+    font-size: 1.3rem;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 2rem;
+}
+
+.row #category {
+    margin: 6em;
+}
+
+.select {
+    display: block;
+    font-size: 16px;
+    font-family: 'Lato', serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .5em 1.4em .5em .8em;
+    width: 20rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 2rem;
+    border: 1px solid #aaa;
+    outline: none;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.4);
+    border-radius: .5em;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+}
+
+.select:hover {
+    cursor: pointer;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+}
+
+#uniform {
+    margin-right: 2em;
+}
+
+#date {
+    margin-left: 2em;
+}
+
+#date:hover {
+    cursor: pointer;
+}
+
+input {
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 3px 9px rgb(182, 179, 179);
+}
+
+input:focus {
+    border: 0.3px crimson solid;
+}
+
+input[type="text"] {
+    padding: 9px 12px;
+    font-size: 1.3rem;
+}
+
+input[type="date"] {
+    font-size: 1rem;
+    padding: 9px 3rem;
+}
+
+input[type="date"]::-webkit-placeholder {
+    font-size: 23px;
+}
+
+.notes {
+    font-size: 19px;
+    outline: none;
+}
+
+.add-box {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.add-inc-btn {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(76, 202, 76);
+    padding: 13px 19px;
+    border: 2px white solid;
+    font-family: 'Lato', serif;
+    font-size: 21px;
+    font-weight: 600;
+    border-radius: 9px;
+    transform: scale(1);
+    transition: 0.2s ease-in;
+}
+
+.add-inc-btn:hover {
+    color: rgb(76, 202, 76);
+    border: 2px rgb(76, 202, 76) solid;
+    background: white;
+}
+
+.add-inc-btn:active {
+    transform: scale(0.9);
+}
+
+
+#display {
+    color: black;
+    font-family: 'Lato', serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 1.7rem 1rem;
+    width: 89.3%;
+    margin: 4px auto;
+    text-align: center;
+    transform: translateY(9.1rem);
+    display: none;
+}
